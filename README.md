@@ -15,10 +15,13 @@ flowchart LR
 
 AdBlocker:
 https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker
+
 Firewall:
 https://docs.opnsense.org/
+
 Proton VPN as Docker Container:
 https://github.com/tprasadtp/protonvpn-docker
+
 
 Deep Packet Injection Tool: 
 https://www.ntop.org/
