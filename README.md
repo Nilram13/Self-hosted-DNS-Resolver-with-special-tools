@@ -8,6 +8,6 @@ How it's going to work: On your phone, laptop or whatever, your typing in your s
 
 ```mermaid
 flowchart LR
-    A[Client] --> |Request via| B[Ad-Blocker]  --> |via| C[OPNSense] --> |via| D[Proton VPN] --> |via| E[quad9 DNS] --> F[(Internet)] --> |Answer via| E --> |via| D --> |via| C --> |via| B --> |via| A
+    A[Client] --> |Request via| B[Ad-Blocker]  --> |via| C[OPNSense] --> |via| D[Proton VPN] --> |via| E[quad9 DNS] --> F[(Internet)] --> |Answer via| D --> |via| C --> |via| B --> |via| A
 
 ```
