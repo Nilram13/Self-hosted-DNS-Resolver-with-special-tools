@@ -13,17 +13,17 @@ flowchart LR
 ```
 
 
-AdBlocker:
+AdBlocker py-hole:
 https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker
 
-Firewall:
+Firewall opnsense:
 https://docs.opnsense.org/
 
 Proton VPN as Docker Container:
 https://github.com/tprasadtp/protonvpn-docker
 
 
-Deep Packet Injection Tool: 
+Deep Packet Injection Tool ntop: 
 https://www.ntop.org/
 https://github.com/ntop/nDPI
 
