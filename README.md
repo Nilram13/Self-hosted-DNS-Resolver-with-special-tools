@@ -1,4 +1,6 @@
-sqq# Self-hosted-DNS-Resolver
+sqq# 
+
+Self-hosted-DNS-Resolver
 I'm building my own DNS-Resolver this year, it's self-hosted and the devices, are connected via tailscale. It's a combination of an ad-blocker, a firewall, a VPN an quad9 DNS.
 
 ## You must have installed Tailscale, to get this working correctly!
