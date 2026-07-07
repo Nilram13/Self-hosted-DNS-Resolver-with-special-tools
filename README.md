@@ -1,32 +1,30 @@
 sqq# Self-hosted-DNS-Resolver
-I'm making an own DNS-Resolver this year, it's self-hosted and the devices, are connected via tailscale. It's an combination out of an ad-blocker, an firewall, an VPN an quad9 DNS, probably more (maybe deep packet injection).
+I'm building my own DNS-Resolver this year, it's self-hosted and the devices, are connected via tailscale. It's a combination of an ad-blocker, a firewall, a VPN an quad9 DNS.
 
-## You've must have installed Tailscale, to get this working correctly!
+## You must have installed Tailscale, to get this working correctly!
 
 
-How it's going to work: On your phone, laptop or whatever, your typing in your servers address as custom DNS-Address. If your try to open an website for example, the system will first pass an ad-blocker, then an firewall (opnsense), after that it's routet via Proton VPN in an Docker Container to the quad9 DNS server and the internet. Propably, I will add deep packet injection.
+How it's going to work: On your phone, laptop or whatever, you type in your servers address as custom DNS-Address. If you try to open a website for example, the system will first pass an ad-blocker, then a firewall (opnsense)(with deep packet injection). After that it's routed via Proton VPN in a Docker Container to the quad9 DNS server and the internet.
+
+
 
 ```mermaid
 flowchart LR
-    A[Client] --> |Request via| B[Ad-Blocker]  --> |via| C[OPNSense] --> |via| D[Proton VPN] --> |via| E[quad9 DNS] --> F[(Internet)] --> |Answer via| D --> |via| C --> |via| B --> |via| A
-
+    A[Client] --> |Request via| B[Ad-Blocker]  --> |via| C[OPNSense] --> |via| D[Proton VPN] --> |via| E[quad9 DNS] --> F[(Internet)] --> D --> C --> B --> A
 ```
 
 
 AdBlocker py-hole:
 https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker
 
-Firewall opnsense:
+Firewall OPNSense:
 https://docs.opnsense.org/
 
 Proton VPN as Docker Container:
 https://github.com/tprasadtp/protonvpn-docker
 
 
-Deep Packet Injection Tool ntop: 
-https://www.ntop.org/
-https://github.com/ntop/nDPI
-
 quad9:
 https://quad9.net/
 
+The Ad-Blocker and Proton will be started in an LXC-Container in Proxmox VE. OPNSense uses its own VM.
