@@ -1,8 +1,8 @@
 Self-hosted-DNS-Resolver
 
+
 I'm building my own DNS-Resolver this year, it's self-hosted and the devices, are connected via tailscale. It's a combination of an ad-blocker, a firewall, a VPN an quad9 DNS.
 
-I'm going to set ist up via the tool containerlab (https://containerlab.dev). With that, I'm able to simulate real, physical networks, just with containers instead of devices.
 
 ## You must have installed Tailscale, to get this working correctly!
 
@@ -26,6 +26,4 @@ Proton VPN as Docker Container: https://github.com/tprasadtp/protonvpn-docker
 
 quad9: https://quad9.net/
 
-The Ad-Blocker and Proton will be started in an Ubuntu VM in Proxmox VE. OPNSense uses its own VM (Maybe convert to container for containerlab?)
-
-Containerlab: https://containerlab.dev
+The Ad-Blocker and Proton will be started in an Ubuntu VM in Proxmox VE. OPNSense uses its own VM.
