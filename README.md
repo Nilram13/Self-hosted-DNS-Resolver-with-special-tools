@@ -1,7 +1,7 @@
 Self-hosted-DNS-Resolver
 
 
-I'm building my own DNS-Resolver this year, it's self-hosted and the devices, are connected via tailscale. It's a combination of an ad-blocker, a firewall, a VPN an quad9 DNS.
+I'm building my own DNS-Resolver this year, it's self-hosted and the devices, are connected via tailscale. It's a combination of an ad-blocker, a firewall, a VPN an quad9 DNS. For routing between the containers, I'm going to use an RouterOS Container.
 
 
 ## You must have installed Tailscale, to get this working correctly!
@@ -27,3 +27,7 @@ Proton VPN as Docker Container: https://github.com/tprasadtp/protonvpn-docker
 quad9: https://quad9.net/
 
 The Ad-Blocker and Proton will be started in an Ubuntu VM in Proxmox VE. OPNSense uses its own VM.
+
+
+
+RouterOS in an Docker Container: https://github.com/EvilFreelancer/docker-routeros

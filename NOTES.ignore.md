@@ -14,3 +14,8 @@ https://github.com/ntop/nDPI
 
 quad9:
 https://quad9.net/
+
+
+
+Docker Communation Hostnames: 
+https://www.geeksforgeeks.org/devops/how-to-communicate-between-docker-containers-via-hostname/
